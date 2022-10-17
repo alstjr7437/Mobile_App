@@ -19,7 +19,7 @@
 
 
 # 페이지별 framework 사용 현황
-- main.html
+- index.html
   + jquery mobile
 - info.html
   + jquery mobile
