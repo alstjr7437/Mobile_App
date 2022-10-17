@@ -1,27 +1,25 @@
 # 2학년 2학기 모바일 앱 강의
-[운동 소개앱](https://cyber-steer.github.io/portfolio_m) <br>
-[모바일 포트폴리오](https://cyber-steer.github.io/portfolio_m) <br>
+[운동 소개앱](https://alstjr7437.github.io/assest/project/workweb) <br>
+[모바일 포트폴리오](https://alstjr7437.github.io/assest/project/mfort) <br>
 
 # 운동 소개앱
-![앱 시작](운동 소개 앱/img/workapp1.jpg) <br>
-![운동 설명](운동 소개 앱/img/workapp2.jpg) <br>
-![운동 영상](운동 소개 앱/img/workapp3.jpg) <br>
-![운동 사진](운동 소개 앱/img/workapp4.jpg) <br>
+
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%EC%9A%B4%EB%8F%99%20%EC%86%8C%EA%B0%9C%20%EC%95%B1/img/workapp1.JPG" width="300" height="500"><br>
 
 # 모바일 포트폴리오
 
-<hr/>
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/mportfolio.JPG" width="300" height="500"><br>
+
 # 사용한 framework
 [jquery mobile](https://jquerymobile.com/) <br>
 [bootstrap](https://getbootstrap.com/) <br>
 [uikit](https://getuikit.com/) <br>
 [bulma](https://bulma.io/) <br>
 
-# 화면
-![첫 화면](포트폴리오 앱/img/mportfolio.JPG)
+
 
 # 페이지별 framework 사용 현황
-- main.html
+- index.html
   + jquery mobile
 - info.html
   + jquery mobile
@@ -52,36 +50,43 @@
 
 
 # bootstrap 사용
-![레이아웃](https://github.com/cyber-steer/portfolio_m/blob/main/media/img/markdown/project_bootstrap.png)
+### 각 버튼별 설명 나오기
+<img src = "https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/bootstrap2.JPG" width="500" height="700">
 
 ```html
-<div class="container text-center">
-    <div class="row">
-        <div class="col-sm-4">
-        </div>
-        <div class="col-sm-4">
-        </div>
-        <div class="col-sm-4">
-        </div>
-    </div>
+<p>
+	<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1">
+		누구인가
+	</button>
+</p>
+<div style="min-height: 120px;">
+	<div class="collapse collapse-horizontal" id="collapseWidthExample1">
+		<div class="card card-body" style="width: 300px;">
+			저는 동의과학대학교 컴퓨터정보학과를 재학중인 김민석입니다.
+		</div>
+	</div>
+</div>
+<p>
+	<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+		코딩 계기
+	</button>
+</p>
+<div style="min-height: 120px;">
+	<div class="collapse collapse-horizontal" id="collapseWidthExample2">
+		<div class="card card-body" style="width: 300px;">
+			형제들을 보며 코딩을 배우고 대학에 들어와 코딩을 접하여 현재는 계속 흥미를 가지고 코딩중 입니다.
+		</div>
+	</div>
 </div>
 ```
-가장 큰 div가 가운데 정렬을 시켜주고 <br>
-class가 row인 div안에 col-sm-4를 넣어줍니다 <br>
-row는 한 행을 뜻하며 col-sm-4는 행의 크기를 12로 잡고 셀 크기를 4/12만큼 잡으며 셀 크기가 575px이하가 되면 자동으로 다시 레이아웃을 정렬하는 반응형 웹 구조입니다
-[참조](https://getbootstrap.com/docs/5.2/layout/grid/) <br>
-
-```html
-
-[참조](https://getbootstrap.com/docs/5.2/layout/grid/) <br>
+각 버튼을 클릭하면 해당 문구가 나오는 구조입니다. <br>
 
 
 # bulma 사용
 ### 카드 만들기
 
-클릭시 옮겨가는 카드 만들기
-![레이아웃](포트폴리오 앱/img/bulma1.JPG
-![레이아웃](포트폴리오 앱/img/bulma2.JPG)
+클릭시 옮겨가는 카드 만들기<br>
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/bulma2.JPG" width="300" height="200">
 
 ```html
 <a href ="https://github.com/alstjr7437">
@@ -104,3 +109,14 @@ row는 한 행을 뜻하며 col-sm-4는 행의 크기를 12로 잡고 셀 크기
 ```
 bulma에서 카드 사용법입니다
 [참조](https://bulma.io/documentation/columns/sizes/) <br>
+
+# uikit 사용
+### 스크롤 버튼 만들기
+
+프로젝트들이 많아서 다시 위로 올리기 귀찮을때<br>
+Scroll up을 누를시 제일 위로 올라가는 동작 만들기<br>
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/uikit3.JPG" width="300" height="200">
+
+```html
+<a class="uk-button uk-button-primary" href="#target" uk-scroll>Scroll Up</a>
+```
