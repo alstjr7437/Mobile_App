@@ -108,7 +108,6 @@
 </a>
 ```
 bulma에서 카드 사용법입니다
-[참조](https://bulma.io/documentation/columns/sizes/) <br>
 
 ## uikit 사용
 ### 스크롤 버튼 만들기
