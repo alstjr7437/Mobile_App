@@ -4,11 +4,12 @@
     <meta charset="utf-8">	
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>HTML5 개인 포트폴리오 홈페이지</title>
-    <link rel="stylesheet" href="mportpolio.css"/>
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<script src="https://fastly.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+	<script type="text/javascript" src="js/echarts.js"></script>
 	<style>
 		h1 {
 			display: block;
@@ -56,6 +57,7 @@
 		<h1>언어</h1>
 		<a href="#menu-career" data-icon="bars" data-position="right" data-iconpos="notext" class="ui-link ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
 	</div>
+		<!--
 		<div data-role="content">
 				<h4>언어</h4>
 				<h5 style="color: gray;">C 65%</h5>
@@ -79,6 +81,101 @@
 				<h5 style="color: gray;">MariaDB 60%</h5>
 				<progress class="progress" value="60" max="100">60%</progress>
 		</div>
+		-->
+		<div id="container" style="height: 100%" style="margin-left: 500px ;"></div>
+		<script type="text/javascript">
+			var dom = document.getElementById('container');
+			var myChart = echarts.init(dom, null, {
+			  renderer: 'canvas',
+			  useDirtyRect: false
+			});
+			var app = {};
+			
+			var option;
+		
+			var nu = 0;
+			var minnum = [0,0,0,0,0,0,0,0,0];
+			var maxnum = [65, 70, 75, 55, 75, 60, 70, 55, 60];
+
+			const data = [];
+			for (let i = 0; i < 9; ++i) {
+				data.push(Math.round(Math.random() * 1));
+			}
+			option = {
+			xAxis: {
+				max: 'dataMax'
+			},
+			yAxis: {
+				type: 'category',
+				data: ['C', 'Java', 'JavaScript', 'Python', 'html', "css", "JSP", "OracleDB", "MariaDB"],
+				datan: [65, 70, 75, 55, 75, 60, 70, 55, 60],
+				inverse: true,
+				animationDuration: 300,
+				animationDurationUpdate: 300,
+				max: 8 // only the largest 3 bars will be displayed
+			},
+			series: [
+				{
+				realtimeSort: true,
+				name: '%',		
+				type: 'bar',
+				data: data,
+				label: {
+					show: true,
+					position: 'right',
+					valueAnimation: true
+				}
+				}
+			],
+			legend: {
+				show: true
+			},
+			animationDuration: 0,
+			animationDurationUpdate: 3000,
+			animationEasing: 'linear',
+			animationEasingUpdate: 'linear'
+			};
+			function run() {
+				while(nu < 5){
+					for (var i = 0; i < data.length; ++i) {
+						if (Math.random() > 0.9) {
+							var rnum = Math.round(Math.random() * 50);
+							data[i] += rnum;
+							minnum += rnum;
+							nu++;
+
+						} else {
+							var rnum = Math.round(Math.random() * 50);
+							data[i] += rnum;
+							minnum += rnum;
+							nu++;
+						}
+					}
+				}
+
+
+			myChart.setOption({
+				series: [
+				{
+					type: 'bar',
+					data
+				}
+				]
+			});
+			}
+			setTimeout(function () {
+			run();
+			}, 0);
+			setInterval(function () {
+			run();
+			}, 3000);
+			
+				if (option && typeof option === 'object') {
+				myChart.setOption(option);
+				}
+			
+					window.addEventListener('resize', myChart.resize);
+		</script>
         <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="a">
 			<h4>Copyright &copy; 2022 Kim, Minseok </h4>
 		</div>

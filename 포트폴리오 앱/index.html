@@ -60,28 +60,30 @@
                         strings: [,  "C"] ,
                         typeSpeed: 100,
                         startDelay: 300,
-                        showCursor: false,
-                        loop: false
+                        loop: false,
+                        onComplete: function(self) { self.cursor.remove() }
                     })
                     var typed2 = new Typed(".typed2",{
                         strings: [,  "Java"] ,
                         typeSpeed: 100,
                         startDelay: 900,
-                        showCursor: false,
-                        loop: false
+                        loop: false,
+                        onComplete: function(self) { self.cursor.remove() }
                     })
                     var typed3 = new Typed(".typed3",{
                         strings: [,  "Python"] ,
                         typeSpeed: 100,
                         startDelay: 1500,
-                        showCursor: false,
-                        loop: false
+                        loop: false,
+                        onComplete: function(self) { self.cursor.remove() }
                     })
                     var typed = new Typed(".typed",{
                         strings: [,  "백앤드 개발자"] ,
                         typeSpeed: 100,
                         startDelay: 2400,
-                        loop: false
+                        loop: false,
+                        
+                        onComplete: function(self) { self.cursor.remove()}
                     })
                 </script>
                 <p class="hero-subtitle"><span class="typed" data-typed-items="안드로이드, AI, 웹"></span></p>
