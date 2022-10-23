@@ -10,7 +10,7 @@
 
 <img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/mportfolio.JPG" width="300" height="500"><br>
 
-# 사용한 framework
+## 사용한 framework
 [jquery mobile](https://jquerymobile.com/) <br>
 [bootstrap](https://getbootstrap.com/) <br>
 [uikit](https://getuikit.com/) <br>
@@ -18,7 +18,7 @@
 
 
 
-# 페이지별 framework 사용 현황
+## 페이지별 framework 사용 현황
 - index.html
   + jquery mobile
 - info.html
@@ -33,7 +33,7 @@
 - project1~8.html
   + jquery mobile
 
-# jquery mobile css 사용
+## jquery mobile css 사용
 ```html
 <div data-role="page">
     <div data-role="panel">
@@ -49,7 +49,7 @@
 기본적으로 모바일 형식을 구현하기 위해 모든 부분에 [jquery mobile](https://jquerymobile.com/) 사용
 
 
-# bootstrap 사용
+## bootstrap 사용
 ### 각 버튼별 설명 나오기
 <img src = "https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/bootstrap2.JPG" width="500" height="700">
 
@@ -82,7 +82,7 @@
 각 버튼을 클릭하면 해당 문구가 나오는 구조입니다. <br>
 
 
-# bulma 사용
+## bulma 사용
 ### 카드 만들기
 
 클릭시 옮겨가는 카드 만들기<br>
@@ -108,9 +108,8 @@
 </a>
 ```
 bulma에서 카드 사용법입니다
-[참조](https://bulma.io/documentation/columns/sizes/) <br>
 
-# uikit 사용
+## uikit 사용
 ### 스크롤 버튼 만들기
 
 프로젝트들이 많아서 다시 위로 올리기 귀찮을때<br>
