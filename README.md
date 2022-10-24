@@ -114,8 +114,25 @@ bulma에서 카드 사용법입니다
 
 프로젝트들이 많아서 다시 위로 올리기 귀찮을때<br>
 Scroll up을 누를시 제일 위로 올라가는 동작 만들기<br>
-<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/uikit3.JPG" width="300" height="200">
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/uikit3.JPG" width="400" height="500">
 
 ```html
 <a class="uk-button uk-button-primary" href="#target" uk-scroll>Scroll Up</a>
+```
+
+## echart 사용
+### 언어 능력 확인
+
+echart를 이용한 각 학기별 언어 능력 성장을 확인하기<br>
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/echart2.JPG" width="800" height="800">
+```html
+<script src="https://fastly.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+<div id="container" style="height: 100%;"></div>
+<script type="text/javascript">
+	var dom = document.getElementById('container');
+	var myChart = echarts.init(dom, null, {
+		renderer: 'canvas',
+		useDirtyRect: false
+	});
+
 ```
