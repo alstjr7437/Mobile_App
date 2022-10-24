@@ -23,7 +23,7 @@
 	</style>
 </head>
 <body> 
-	<div data-role="panel" id="menu-career" class="menu" data-display="overlay" data-theme="b" data-position="right">
+	<div data-role="panel" id="menu-career" class="menu" data-display="overlay" data-theme="a" data-position="right">
 		<a href="" data-role="button" data-icon="delete" data-iconpos="notext" data-rel="close"></a>
 		<hr>
 		<h1>메뉴</h1>
@@ -50,7 +50,7 @@
 					<li><a rel="external" href="project8.html">AI 빵집 포스기</a></li>
 				</ul>
 			</div>
-			<li><a rel="external" href="career.html" style="background-color: #1c1c1c;" data-rel="close">언어</a></li>
+			<li><a rel="external" href="career.html" style="background-color: #bebebe;" data-rel="close">언어</a></li>
 		</ul>
 	</div>
 	<div data-role="header" data-theme="a" data-position="right" data-position-fixed = "true" data-display= "overlay"class="header">
@@ -82,7 +82,7 @@
 				<progress class="progress" value="60" max="100">60%</progress>
 		</div>
 		-->
-		<div id="container" style="height: 100%" style="margin-left: 500px ;"></div>
+		<div id="container" style="height: 100%;"></div>
 		<script type="text/javascript">
 			var dom = document.getElementById('container');
 			var myChart = echarts.init(dom, null, {
@@ -92,32 +92,35 @@
 			var app = {};
 			
 			var option;
-		
-			var nu = 0;
-			var minnum = [0,0,0,0,0,0,0,0,0];
-			var maxnum = [65, 70, 75, 55, 75, 60, 70, 55, 60];
+
+			var minnum = [0,0,0,0,0,0,0,0,0,0];
+			var date1 = [40, 0, 0, 0, 30, 30, 0, 0, 0, 0];				//1학년 1학기
+			var date2 = [45, 40, 0, 20, 40, 40, 40, 30, 0, 0];		//1학년 2학기
+			var date3 = [55, 60, 50, 50, 65, 50, 60, 45, 40, 60];	//2학년 1학기
+			var date4 = [65, 70, 75, 55, 75, 60, 70, 55, 60, 60];	//2학년 2학기
 
 			const data = [];
 			for (let i = 0; i < 9; ++i) {
-				data.push(Math.round(Math.random() * 1));
+				data.push(0);
 			}
 			option = {
 			xAxis: {
-				max: 'dataMax'
+				max: 100,
+				name:"능력\n(%)"
 			},
 			yAxis: {
 				type: 'category',
-				data: ['C', 'Java', 'JavaScript', 'Python', 'html', "css", "JSP", "OracleDB", "MariaDB"],
-				datan: [65, 70, 75, 55, 75, 60, 70, 55, 60],
+				data: ['C', 'Java', 'Java\nScript', 'Python', 'html', "css", "JSP", "Oracle\nDB", "Maria\nDB","Android\nApp"],
 				inverse: true,
 				animationDuration: 300,
 				animationDurationUpdate: 300,
+				name:"언어",
+				nameLocation: "start",
 				max: 8 // only the largest 3 bars will be displayed
 			},
 			series: [
 				{
-				realtimeSort: true,
-				name: '%',		
+				realtimeSort: true,	
 				type: 'bar',
 				data: data,
 				label: {
@@ -130,51 +133,119 @@
 			legend: {
 				show: true
 			},
+			title: {
+				text:"2019년도 1학기",
+     			left: 'right',
+				textStyle: {
+					fontSize: 30,
+					fontWeight: "bolder"
+					}
+			},
 			animationDuration: 0,
 			animationDurationUpdate: 3000,
 			animationEasing: 'linear',
 			animationEasingUpdate: 'linear'
 			};
 			function run() {
-				while(nu < 5){
-					for (var i = 0; i < data.length; ++i) {
-						if (Math.random() > 0.9) {
-							var rnum = Math.round(Math.random() * 50);
-							data[i] += rnum;
-							minnum += rnum;
-							nu++;
-
-						} else {
-							var rnum = Math.round(Math.random() * 50);
-							data[i] += rnum;
-							minnum += rnum;
-							nu++;
+				for(var i = 0; i < data.length; ++i){
+					while(true){
+						if(minnum[i] == date1[i]) {
+							break;
 						}
+						data[i] += 5;
+						minnum[i] += 5;
 					}
-				}
+				}	
 
+				myChart.setOption({
+					series: [ {
+						type: 'bar',
+						data
+					} ]
+				});
+			}
+			function run2() {
+				for(var i = 0; i < data.length; ++i){
+					while(true){
+						if(minnum[i] == date2[i]) {
+							break;
+						}
+						data[i] += 5;
+						minnum[i] += 5;
+					}
+				}	
 
-			myChart.setOption({
-				series: [
-				{
-					type: 'bar',
-					data
-				}
-				]
-			});
+				myChart.setOption({
+					series: [ {
+						type: 'bar',
+						data
+					} ],
+					title :{
+						text:"2021년도 2학기"
+					}
+				});
+			}
+			function run3() {
+				for(var i = 0; i < data.length; ++i){
+					while(true){
+						if(minnum[i] == date3[i]) {
+							break;
+						}
+						data[i] += 5;
+						minnum[i] += 5;
+					}
+				}	
+
+				myChart.setOption({
+					series: [ {
+						type: 'bar',
+						data
+					} ],
+					title :{
+						text:"2022년도 1학기"
+					}
+				});
+			}
+			function run4() {
+				for(var i = 0; i < data.length; ++i){
+					while(true){
+						if(minnum[i] == date4[i]) {
+							break;
+						}
+						data[i] += 5;
+						minnum[i] += 5;
+					}
+				}	
+
+				myChart.setOption({
+					series: [ {
+						type: 'bar',
+						data
+					} ],
+					title :{
+						text:"2022년도 2학기"
+					}
+				});
 			}
 			setTimeout(function () {
-			run();
+				run();
 			}, 0);
-			setInterval(function () {
-			run();
-			}, 3000);
-			
-				if (option && typeof option === 'object') {
+			setTimeout(function () {
+				run2();
+			}, 3500);
+			setTimeout(function () {
+				run3();
+			}, 7000);
+			setTimeout(function () {
+				run4();
+			}, 10500);
+
+				
+			if (option && typeof option === 'object') {
 				myChart.setOption(option);
-				}
+			}
 			
-					window.addEventListener('resize', myChart.resize);
+		window.addEventListener('resize', myChart.resize);
 		</script>
         <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="a">
 			<h4>Copyright &copy; 2022 Kim, Minseok </h4>
