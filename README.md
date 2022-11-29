@@ -6,13 +6,13 @@
 
 # 
 
-### 운동 소개앱 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 모바일 자기소개앱
-<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%EC%9A%B4%EB%8F%99%20%EC%86%8C%EA%B0%9C%20%EC%95%B1/img/workapp1.JPG" width="300" height="500" align="left">
+### 운동 소개앱 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 모바일 자기소개앱
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%EC%9A%B4%EB%8F%99%20%EC%86%8C%EA%B0%9C%20%EC%95%B1/img/workapp1.JPG" width="350" height="550" align="left">
 
-<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%20%EC%95%B1/img/mportfolio.JPG" width="300" height="500" align="center">
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%20%EC%95%B1/img/mportfolio.JPG" width="350" height="550" align="center">
 
 ### 모바일 포트폴리오
-<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/assets/img/%EB%8F%99%EC%9E%91.JPG" width="300" height="500">
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/assets/img/%EB%8F%99%EC%9E%91.JPG" width="350" height="550">
 
 ## 사용한 framework
 [jquery mobile](https://jquerymobile.com/) <br>
