@@ -1,0 +1,88 @@
+body{
+    margin: 0px auto;
+    text-align: center;
+}
+div{
+    margin: 0px auto;
+    text-align: center;
+}
+#divName{
+    margin: 0px auto;
+    text-align: center;
+    height:50px;
+}
+#divLogin{
+    font-size: 15px;
+    margin-left: 10px;
+    float: left;
+    text-align: left;
+    width: 60%;
+}
+#btnLogin{
+    size: 10px
+}
+#divClock{
+    font-size: 20px;
+    color: gray;
+    height: 40px;
+    text-align: end;
+    float: right;
+    width: 30%;
+}
+#listToDo{
+    display: inline-block;
+    width: 750px;
+    height: 500px;
+    background-color: #D1E7DD;
+    border-radius: 10px;
+    padding: 5px;
+    overflow-y: auto;
+}
+#listDone{
+    display: inline-block;
+    width: 750px;
+    height: 500px;
+    background-color: #F8D7DA;
+    border-radius: 10px;
+    padding: 5px;
+    overflow-y: auto;
+}
+#table1,#table2{
+    width: 700px; 
+    margin: 0 auto;
+}
+.alert{
+    width: 500px;
+    height: 300px;
+}
+table {
+    border-collapse: collapse;
+}        
+th{
+    border: 1px solid gray;
+    background-color: white;
+    width: 250px;
+}
+td{
+    border: 1px solid gray;
+    background-color: white;
+}
+#thFinish{
+    width: 100px;
+    border: 0px;
+    background-color: #D1E7DD;
+}
+#thDate{
+    width: 180px;
+}
+#thTime{
+    width: 130px;
+}
+#thDelete{
+    width: 100px;
+    border: 0px;
+    background-color: #F8D7DA;
+}
+#later{
+    color:rgb(236, 3, 217)
+}

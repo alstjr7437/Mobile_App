@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List Project</title>
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./Do.css" rel="stylesheet"></style>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./create.js"></script>
+    <script src="./time.js"></script>
+    <script src="./local.js"></script>
+    <script>
+        //=========================================================================
+        function gid(id) {return document.getElementById(id);}
+        //==========================================================================
+        
+        //=========================================================================
+        //html문서가 준비되면 함수들 돌리는 곳
+        $(document).ready(function(){
+            setTime();                                  //처음에 바로 시간이 보이도록
+            tid=setInterval('setTime()', 1000);         //1초마다 시간이 계속 업데이트
+            $("#newItem").keydown(keydownHandler);      //내용에서 엔터 입력시
+            $("#btnFinish").click(finishHandler);       //완료 버튼 누를시
+            $("#password").keydown(keydownHandler2);    //비밀번호에서 엔터 누를시
+            $("#btnLogin").click(login);                //login버튼 클릭시
+            $("#btnlogOut").click(logout);              //logout버튼 클릭시
+            $("#btnNew").click(saveLogin);              //생 성버튼 클릭시
+            readList(); //처음 테이블 불러오도록
+
+            //처음 날짜 선택에 현재 날짜 들어가도록 
+            gid('idate').value = new Date().toISOString().substring(0, 10);
+        });
+ 
+        //=========================================================================
+    </script>
+</head>
+<body>
+    <div id="divName">
+        <h1>ToDo List</h1>
+    </div>
+    <div id = "divLogin">
+        아 이 디 : <input type="text" id ="login" size ="10"> 
+        
+        비밀번호 : <input type="password" id ="password" size = "10">
+        <br>
+        사 용 자 : <input type="text" value = "공용"id="name" size="10">
+        <button id = "btnLogin" class="btn btn-primary btn-sm">로 그 인</button> 
+        <button id = "btnlogOut" class="btn btn-primary btn-sm">로그아웃</button>
+        <button id = "btnNew" class="btn btn-primary btn-sm">생 성</button>
+    </div>
+    <div id = "divClock" class = "clock"> </div>
+    <br><br><hr>
+    기 간 : <input type="date" id = "idate"> <input type="time" id = "itime" value = "12:00">
+
+    <br>
+    해야할 일 : <input type="text" id="newItem" size="30">
+    <button id = "btnFinish" class = "btn-success btn-sm">완료</button>
+    <hr>
+    <div id="listToDo">
+        <h3>ToDo List</h3>
+        <table class = "table" id = "table1">
+            <thead class = "table-light">
+                <th id = "thFinish"></th>
+                <th>남은 시간</th>
+                <th id ="thDate">날짜</th>
+                <th id ="thTime">시간</th>
+                <th>내용</th>
+                <th id = "thFinish"></th>
+            </thead>
+            <tbody id = "tbodyToDo"></tbody>
+        </table>
+    </div>
+    <div id="listDone">
+        <h3>Done List</h3>
+        <table class = "table" id = "table2"> 
+            <thead class = "table-light">
+                <th id = "thDelete"></th>
+                <th>남은 시간</th>
+                <th id ="thDate">날짜</th>
+                <th id ="thTime">시간</th>
+                <th>내용</th>
+                <th id = "thDelete"></th>
+            </thead>
+            <tbody id = "tbodyDone"></tbody>
+        </table>
+    </div>
+</body>
+</html>

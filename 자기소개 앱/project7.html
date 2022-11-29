@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HTML5 개인 포트폴리오 홈페이지</title>
+    <link rel="stylesheet" href="mportpolio.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+		h1 {
+			display: block;
+			font-size: 2em;
+			margin-block-start: 0.67em;
+			margin-block-end: 0.67em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+    <div data-role="page" id = "project7">
+        <div data-role="panel" id="menu-project7" class="menu" data-display="overlay" data-theme="a" data-position="right">
+            <a href="" data-role="button" data-icon="delete" data-iconpos="notext" data-rel="close"></a>
+            <hr>
+            <h1>메뉴</h1>
+            <ul data-role="listview">
+                <li><a rel="external" href="index.html">메인</a></li>
+                <div data-role="collapsible" data-insert="false" class="menu-info">
+                    <h3>김민석</h3>
+                    <ul data-role="listview" class="menu-ul" style="margin-left: 1rem;">
+                        <li><a rel="external" href="info.html">개인정보</a></li>
+                        <li><a rel="external" href="intro.html">자기소개</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-insert="false" class="menu-protfolio">
+                    <h3>프로젝트</h3>
+                    <ul data-role="listview" class="menu-ul" style="margin-left: 1rem;">
+                        <li><a rel="external" href="project.html">전체 프로젝트</a></li>
+                        <li><a rel="external" href="project1.html">C언어 개인정보 관리</a></li>
+                        <li><a rel="external" href="project2.html">여행 어플 포토샵</a></li>
+                        <li><a rel="external" href="project3.html">아두이노 금고</a></li>
+                        <li><a rel="external" href="project4.html">ToDo 웹</a></li>
+                        <li><a rel="external" href="project5.html">회사 관리 애플리케이션</a></li>
+                        <li><a rel="external" href="project6.html">운동 모바일 앱</a></li>
+                        <li><a rel="external" href="project7.html" style="background-color: #bebebe;" data-rel="close">요리 도우미 웹</a></li>
+                        <li><a rel="external" href="project8.html">AI 빵집 포스기</a></li>
+                    </ul>
+                </div>
+                <li><a rel="external" href="career.html">언어</a></li>
+            </ul>
+        </div>
+        <div data-role="header" data-theme="a" data-position="right" data-position-fixed = "true" data-display= "overlay"class="header">
+            <h1>요리 도우미 웹</h1>
+            <a href="#menu-project7" data-icon="bars" data-position="right" data-iconpos="notext" class="ui-link ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
+        </div>
+        <div data-role = "content" class="content">
+            <h1>요리 도우미 웹</h1>
+            <h3>2022년도 1학기</h3>
+            <img src = "img/portfolio-7.jpg" style="max-width:100%; max-height:auto;">
+            <a href ="https://alstjr7437.github.io/portfolio-details7.html">확인하기</a>
+        </div>
+        <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="a">
+            <h2>Copyright &copy; 2022 Kim, Minseok </h2>
+        </div>
+            
+        </div>
+    </div>
+</body>
+</html>

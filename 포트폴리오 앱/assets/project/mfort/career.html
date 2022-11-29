@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HTML5 개인 포트폴리오 홈페이지</title>
+    <link rel="stylesheet" href="mportpolio.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body> 
+	<div data-role="panel" id="menu-career" class="menu" data-display="overlay" data-theme="b" data-position="right">
+		<a href="" data-role="button" data-icon="delete" data-iconpos="notext" data-rel="close"></a>
+		<hr>
+		<h1>메뉴</h1>
+		<ul data-role="listview">
+			<li><a rel="external" href="index.html">메인</a></li>
+			<div data-role="collapsible" data-insert="false" class="menu-info">
+				<h3>김민석</h3>
+				<ul data-role="listview" class="menu-ul" style="margin-left: 1rem;">
+					<li><a rel="external" href="info.html">개인정보</a></li>
+					<li><a rel="external" href="intro.html">자기소개</a></li>
+				</ul>
+			</div>
+			<div data-role="collapsible" data-insert="false" class="menu-protfolio">
+				<h3>프로젝트</h3>
+				<ul data-role="listview" class="menu-ul" style="margin-left: 1rem;">
+					<li><a rel="external" href="project.html">전체 프로젝트</a></li>
+					<li><a rel="external" href="project1.html">C언어 개인정보 관리</a></li>
+					<li><a rel="external" href="project2.html">여행 어플 포토샵</a></li>
+					<li><a rel="external" href="project3.html">아두이노 금고</a></li>
+					<li><a rel="external" href="project4.html">ToDo 웹</a></li>
+					<li><a rel="external" href="project5.html">회사 관리 어플</a></li>
+					<li><a rel="external" href="project6.html">운동 모바일 앱</a></li>
+					<li><a rel="external" href="project7.html">요리 도우미 웹</a></li>
+					<li><a rel="external" href="project8.html">AI 빵집 포스기</a></li>
+				</ul>
+			</div>
+			<li><a rel="external" href="career.html" style="background-color: #1c1c1c;" data-rel="close">언어</a></li>
+		</ul>
+	</div>
+	<div data-role="header" data-theme="a" data-position="right" data-position-fixed = "true" data-display= "overlay"class="header">
+		<h1>언어</h1>
+		<a href="#menu-career" data-icon="bars" data-position="right" data-iconpos="notext" class="ui-link ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
+	</div>
+		<div data-role="content">
+				<h4>백앤드</h4>
+				<h5 style="color: gray;">C 30%</h5>
+				<progress class="progress" value="30" max="100">30%</progress>
+				<h5 style="color: gray;">Java 50%</h5>
+				<progress class="progress" value="50" max="100">50%</progress>
+				<h5 style="color: gray;">Python 55%</h5>
+				<progress class="progress" value="55" max="100">55%</progress>
+				<h5 style="color: gray;">Javascript 40%</h5>
+				<progress class="progress" value="40" max="100">40%</progress>
+				<h4>프론트앤드</h4>
+				<h5 style="color: gray;">C 30%</h5>
+				<progress class="progress" value="30" max="100">30%</progress>
+				<h5 style="color: gray;">Java 50%</h5>
+				<progress class="progress" value="50" max="100">50%</progress>
+				<h5 style="color: gray;">Python 55%</h5>
+				<progress class="progress" value="55" max="100">55%</progress>
+				<h5 style="color: gray;">Javascript 40%</h5>
+				<progress class="progress" value="40" max="100">40%</progress>
+		</div>
+        <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="a">
+			<h4>Copyright &copy; 2022 Kim, Minseok </h4>
+		</div>
+	</div>
+</body>
+</html>

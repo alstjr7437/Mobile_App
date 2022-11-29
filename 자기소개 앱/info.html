@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HTML5 개인 포트폴리오 홈페이지</title>
+    <link rel="stylesheet" href="mportpolio.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<style>
+		h1 {
+			display: block;
+			font-size: 2em;
+			margin-block-start: 0.67em;
+			margin-block-end: 0.67em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div data-role="page" id = "info">
+		<div data-role="panel" id="menu-info" class="menu" data-display="overlay" data-theme="a" data-position="right">
+            <a href="" data-role="button" data-icon="delete" data-iconpos="notext" data-rel="close"></a>
+            <hr>
+            <h1 style="display: block ;">메뉴</h1>
+            <ul data-role="listview">
+                <li><a rel="external" href="index.html">메인</a></li>
+                <div data-role="collapsible" data-insert="false" class="menu-info">
+                    <h3>김민석</h3>
+                    <ul data-role="listview" class="menu-ul" style="margin-left: 1rem;">
+                        <li><a rel="external" href="info.html" style="background-color: #bebebe;" data-rel="close">개인정보</a></li>
+                        <li><a rel="external" href="intro.html">자기소개</a></li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-insert="false" class="menu-protfolio">
+                    <h3>프로젝트</h3>
+                    <ul data-role="listview" class="menu-ul" style="margin-left: 1rem;">
+						<li><a rel="external" href="project.html">전체 프로젝트</a></li>
+                        <li><a rel="external" href="project1.html">C언어 개인정보 관리</a></li>
+                        <li><a rel="external" href="project2.html">여행 어플 포토샵</a></li>
+                        <li><a rel="external" href="project3.html">아두이노 금고</a></li>
+                        <li><a rel="external" href="project4.html">ToDo 웹</a></li>
+                        <li><a rel="external" href="project5.html">회사 관리 어플</a></li>
+                        <li><a rel="external" href="project6.html">운동 모바일 앱</a></li>
+                        <li><a rel="external" href="project7.html">요리 도우미 웹</a></li>
+                        <li><a rel="external" href="project8.html">AI 빵집 포스기</a></li>
+                    </ul>
+                </div>
+                <li><a rel="external" href="career.html">언어</a></li>
+            </ul>
+        </div>
+		<div data-role="header" data-theme="a" data-position="right" data-position-fixed = "true" data-display= "overlay"class="header">
+			<h1>개인 정보</h1>
+			<a href="#menu-info" data-icon="bars" data-position="right" data-iconpos="notext" class="ui-link ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
+		</div>
+		<div data-role = "content" class="content">
+			<section class="section1">  
+				<img src="img/profile-img.jpg" width="150" height="150" />	
+				<ul>
+					<li>성    명 : 김민석</li>
+					<li>생년월일 : 2000. 3. 24</li>
+					<li>주    소 : 울산시 북구 신천로 103</li>
+					<li>연 락 처 : 010-3024-7437</li>
+					<li>학    력
+					<table id="year-table" border="1">
+						<thead>
+							<tr>	<th>졸업년도</th> <th>출신학교</th></tr>
+						</thead>
+						<tbody>
+							<tr>	<td>2013. 2</td><td> 동천초등학교 졸업</td>	</tr>
+							<tr>	<td>2016. 2.</td><td> 동천중학교 졸업</td>	</tr>
+							<tr>	<td>2019. 2.</td><td> 동천고등학교 졸업</td></tr>
+						</tbody>
+					</table>
+					</li>
+				</ul>
+			</section>
+			<a href ="https://www.facebook.com/profile.php?id=100007306084775">
+				<div class="card">
+					<div class="card-content">
+					<div class="media">
+						<div class="media-left">
+						<figure class="image is-48x48">
+							<img src="img/facebook.jpg" alt="Placeholder image">
+						</figure>
+						</div>
+						<div class="media-content">
+						<p class="title is-4">Facebook</p>
+						<p class="subtitle is-6">김민석</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</a>
+			<a href ="https://github.com/alstjr7437">
+				<div class="card">
+					<div class="card-content">
+					<div class="media">
+						<div class="media-left">
+						<figure class="image is-48x48">
+							<img src="img/git.jpg" alt="Placeholder image">
+						</figure>
+						</div>
+						<div class="media-content">
+						<p class="title is-4">GitHub</p>
+						<p class="subtitle is-6">alstjr7437</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</a>
+			<a href="https://blog.naver.com/alstjr7437">
+				<div class="card">
+					<div class="card-content">
+					<div class="media">
+						<div class="media-left">
+						<figure class="image is-48x48">
+							<img src="img/naver.jpg" alt="Placeholder image">
+						</figure>
+						</div>
+						<div class="media-content">
+						<p class="title is-4">블로그</p>
+						<p class="subtitle is-6">alstjr7437</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</a>
+		<div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="a">
+			<h2>Copyright &copy; 2022 Kim, Minseok </h2>
+		</div>
+	</div>
+</body>
+</html>

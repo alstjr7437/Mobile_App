@@ -1,97 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">	
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>HTML5 개인 포트폴리오 홈페이지</title>
-    <link rel="stylesheet" href="mportpolio.css"/>
-    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/jquery.mobile-1.4.5.min.js"></script>  
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>김민석의 포트폴리오</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.9.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body >
-    <div data-role="page" id = "index">
-        <div data-role="panel" id="menu-index" class="menu" data-display="overlay" data-theme="a" data-position="right">
-            <a href="" data-role="button" data-icon="delete" data-iconpos="notext" data-rel="close"></a>
-            <hr>
-            <h1>메뉴</h1>
-            <ul data-role="listview">
-                <li><a rel="external" href="index.html" style="background-color: #bebebe;" data-rel="close">메인</a></li>
-                <div data-role="collapsible" data-insert="false" class="menu-info">
-                    <h3>김민석</h3>
-                    <ul data-role="listview" class="menu-ul" style="margin-left: 1rem;">
-                        <li><a rel="external" href="info.html">개인정보</a></li>
-                        <li><a rel="external" href="intro.html">자기소개</a></li>
-                    </ul>
-                </div>
-                <div data-role="collapsible" data-insert="false" class="menu-protfolio">
-                    <h3>프로젝트</h3>
-                    <ul data-role="listview" class="menu-ul" style="margin-left: 1rem;">
-						<li><a rel="external" href="project.html">전체 프로젝트</a></li>
-                        <li><a rel="external" href="project1.html">C언어 개인정보 관리</a></li>
-                        <li><a rel="external" href="project2.html">여행 어플 포토샵</a></li>
-                        <li><a rel="external" href="project3.html">아두이노 금고</a></li>
-                        <li><a rel="external" href="project4.html">ToDo 웹</a></li>
-                        <li><a rel="external" href="project5.html">회사 관리 어플</a></li>
-                        <li><a rel="external" href="project6.html">운동 모바일 앱</a></li>
-                        <li><a rel="external" href="project7.html">요리 도우미 웹</a></li>
-                        <li><a rel="external" href="project8.html">AI 빵집 포스기</a></li>
-                    </ul>
-                </div>
-                <li><a rel="external" href="career.html">언어</a></li>
-            </ul>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Kim Min Seok</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100007306084775" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-google"></i></a>
+          <a href="https://github.com/alstjr7437" class="git"><i class="bx bxl-linkedin"></i></a>
         </div>
-        <div data-role="header" data-theme="a" data-position="right" data-position-fixed = "true" data-display= "overlay"class="header">
-            <h1>메인</h1>
-            <a href="#menu-index" data-icon="bars" data-position="right" data-iconpos="notext" class="ui-link ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
-        </div>
-        <div data-role="content" data-theme="b" class="content" style="position: fixed;; width:100%; height:100%; background-image: url('img/base1.jpg');">
-            <div style="margin: 20%;">
-                <h1>저는 <br>
-                <span class="typed1"> </span><br>
-                <span class="typed2"> </span><br>
-                <span class="typed3"> </span><br>
-                <span class="typed"> </span><br>
-                김민석 입니다.</h1>
- 
-                <script>
-                    var typed1 = new Typed(".typed1",{
-                        strings: [,  "C"] ,
-                        typeSpeed: 100,
-                        startDelay: 300,
-                        loop: false,
-                        onComplete: function(self) { self.cursor.remove() }
-                    })
-                    var typed2 = new Typed(".typed2",{
-                        strings: [,  "Java"] ,
-                        typeSpeed: 100,
-                        startDelay: 900,
-                        loop: false,
-                        onComplete: function(self) { self.cursor.remove() }
-                    })
-                    var typed3 = new Typed(".typed3",{
-                        strings: [,  "Python"] ,
-                        typeSpeed: 100,
-                        startDelay: 1500,
-                        loop: false,
-                        onComplete: function(self) { self.cursor.remove() }
-                    })
-                    var typed = new Typed(".typed",{
-                        strings: [,  "백앤드 개발자"] ,
-                        typeSpeed: 100,
-                        startDelay: 2400,
-                        loop: false,
-                        
-                        onComplete: function(self) { self.cursor.remove()}
-                    })
-                </script>
-                <p class="hero-subtitle"><span class="typed" data-typed-items="안드로이드, AI, 웹"></span></p>
-            </div>
-        </div>
-        <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="a">
-            <h2>Copyright &copy; 2022 Kim, Minseok </h2>
-        </div>	
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>성장과정</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>프로젝트</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Kim Min Seok</h1>
+      <p>I'm <span class="typed" data-typed-items="Backend-Developer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>안녕하세요.저는 동의과학대학교 2학년에 재학중인 김민석입니다.</p> 
+          <p>저는 최종적으로 풀스택 개발자를 꿈꾸는 개발자이며</p>
+          <p>현재는 학교에서 프론트앤드와 백앤드 데이터베이스 부분을 실습하고 있습니다!</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile2-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Back-end Developer.</h3>
+            <p class="fst-italic">
+              I am a backend and database oriented programmer.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>생일:</strong> <span>2000 - 3 - 24</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>웹 사이트:</strong> <span><a href="https://alstjr7437.github.io">https://alstjr7437.github.io/</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>핸드폰:</strong> <span>010-3024-7437</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>도시:</strong> <span>대한민국 부산</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>나이:</strong> <span>23</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>직업:</strong> <span>대학생 </span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>이메일:</strong> <span>alstjr7437@naver.com</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>현재까지 배우고 연습한 언어입니다.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">JSP <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div> 
+            <div class="progress">
+              <span class="skill">Maria DB <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Oracle DB <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="progress">
+              <span class="skill">C <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Java <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div> 
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Python <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Android app development <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= 성장과정 ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>성장과정</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">동의과학대학교</h3>
+            <div class="resume-item">
+              <h4>2019년도 1학기</h4>
+              <h5>2019.03 - 2019.07</h5>
+              <p>Html, css, C언어, 아두이노, 포토샵 입문</p>
+              <p>C언어 학생 관리 시스템 프로젝트 </p>
+              <p>여행 어플의 화면 포토샵 </p>
+              <p>아두이노를 이용한 금고 프로젝트 </p>
+            </div>
+            <div class="resume-item">
+              <h4>2021년도 2학기</h4>
+              <h5>2021.09 - 2021.12</h5>
+              <p>Java, Python, Oracle DB, JavaScript 입문</p>
+              <p>JavaScript를 이용한 ToDo 웹 개발</p>
+              <p>Java와 데이트베이스를 이용한 회사 관리 프로젝트(학과 BootCamp 대상)</p>
+            </div>
+            <div class="resume-item">
+              <h4>2022년도 1학기</h4>
+              <h5>2022.03 - 2022.07</h5>
+              <p>JSP, Maria DB, 안드로이드 앱 개발 입문</p>
+              <p>Java 멘토 활동 </p>
+              <p>AI 교육 과정 수료(22.03 - 22.08)</p>
+              <p>안드로이드 운동 모바일 앱 개발</p>
+              <p>요리도우미 웹 개발</p>
+              <p>yolov5를 이용한 AI 빵집 포스기 시스템 개발(캡스톤 디자인 참가)</p>
+            </div>
+            <div class="resume-item">
+              <h4>2022년도 2학기</h4>
+              <h5>2022.09 - 2022.12</h5>
+              <p>캡스톤 디자인 참가</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">편입 대학교 ~</h3>
+            <div class="resume-item">
+              <h4>2023년도 1학기</h4>
+              <h5>2023 - ing</h5>
+              <ul>
+                <li>공부</li>
+              </ul>
+            </div>
+          
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>프로젝트</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-card">Application</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="개인정보 관리 시스템"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="여행 어플 포토샵"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="아두이노 금고"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ToDo 웹"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="회사 관리 시스템"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="운동 도우미 앱"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="요리 도우미 웹"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="AI 빵집 포스기"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>부산</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>alstjr7437@naver.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>010-3024-7437</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.6387162417827!2d129.06926391524485!3d35.16562998031776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eca70d07d243%3A0xca0acf886f784030!2z64-Z7J2Y6rO87ZWZ64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1664849095443!5m2!1sko!2skr" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
