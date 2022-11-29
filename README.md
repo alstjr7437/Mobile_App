@@ -1,15 +1,18 @@
 # 2학년 2학기 모바일 앱 강의
 [Netlify](https://dazzling-genie-bf6e40.netlify.app) <br>
 [운동 소개앱](https://dazzling-genie-bf6e40.netlify.app/%EC%9A%B4%EB%8F%99%20%EC%86%8C%EA%B0%9C%20%EC%95%B1/work-intro.html) <br>
-[모바일 포트폴리오](https://dazzling-genie-bf6e40.netlify.app/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/index.html) <br>
+[모바일 자기소개앱](https://dazzling-genie-bf6e40.netlify.app/%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%20%EC%95%B1/index.html) <br>
+[모바일 포트폴리오앱](https://dazzling-genie-bf6e40.netlify.app/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/index.html) <br>
 
-# 운동 소개앱
+# 
 
-<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%EC%9A%B4%EB%8F%99%20%EC%86%8C%EA%B0%9C%20%EC%95%B1/img/workapp1.JPG" width="300" height="500"><br>
+### 운동 소개앱 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 모바일 자기소개앱
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%EC%9A%B4%EB%8F%99%20%EC%86%8C%EA%B0%9C%20%EC%95%B1/img/workapp1.JPG" width="350" height="550" align="left">
 
-# 모바일 포트폴리오
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%20%EC%95%B1/img/mportfolio.JPG" width="350" height="550" align="center">
 
-<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/mportfolio.JPG" width="300" height="500"><br>
+### 모바일 포트폴리오
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/assets/img/%EB%8F%99%EC%9E%91.JPG" width="350" height="550">
 
 ## 사용한 framework
 [jquery mobile](https://jquerymobile.com/) <br>
@@ -56,7 +59,7 @@
 
 ## bootstrap 사용
 ### 각 버튼별 설명 나오기
-<img src = "https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/bootstrap2.JPG" width="500" height="700">
+<img src = "https://github.com/alstjr7437/Mobile_App/blob/main/%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%20%EC%95%B1/img/bootstrap2.JPG" width="500" height="700">
 
 ```html
 <p>
@@ -91,7 +94,7 @@
 ### 카드 만들기
 
 클릭시 옮겨가는 카드 만들기<br>
-<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/bulma2.JPG" width="300" height="200">
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%20%EC%95%B1/img/bulma2.JPG" width="300" height="200">
 
 ```html
 <a href ="https://github.com/alstjr7437">
@@ -119,7 +122,7 @@ bulma에서 카드 사용법입니다
 
 프로젝트들이 많아서 다시 위로 올리기 귀찮을때<br>
 Scroll up을 누를시 제일 위로 올라가는 동작 만들기<br>
-<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/uikit3.JPG" width="400" height="500">
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%20%EC%95%B1/img/uikit3.JPG" width="400" height="500">
 
 ```html
 <a class="uk-button uk-button-primary" href="#target" uk-scroll>Scroll Up</a>
@@ -129,7 +132,7 @@ Scroll up을 누를시 제일 위로 올라가는 동작 만들기<br>
 ### 언어 능력 확인
 
 echart를 이용한 각 학기별 언어 능력 성장을 확인하기<br>
-<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%95%B1/img/echart2.JPG" width="800" height="800">
+<img src="https://github.com/alstjr7437/Mobile_App/blob/main/%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%20%EC%95%B1/img/echart2.JPG" width="800" height="800">
 ```html
 <script src="https://fastly.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
 <div id="container" style="height: 100%;"></div>
